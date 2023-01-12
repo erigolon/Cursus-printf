@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 15:13:38 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/12 12:42:05 by erigolon         ###   ########.fr       */
+/*   Updated: 2023/01/12 13:26:09 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,25 @@ int	ft_printf(char const *ph, ...)
 		if (ph[i] == '%')
 		{
 			i++;
-			ft_check_percentage(ph[i], args, count);
+			count = ft_check_percentage(ph[i], args, count);
 		}
 		else
-			count = count + ft_putcharf(ph[i]);
+			count += ft_putcharf(ph[i]);
 		i++;
 	}
 	return (count);
 }
+/*
+int	main(void)
+{
+	int	result;
+	int	myresult;
+
+	result = printf("Hola como %c estas\n", '0');
+	myresult = ft_printf("Hola como %c estas\n", '0');
+	printf("-----\n");
+	printf("%d\n", result);
+	printf("%d\n", myresult);
+	return (0);
+}
+*/
