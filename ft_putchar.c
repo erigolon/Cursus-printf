@@ -6,13 +6,14 @@
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 19:25:22 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/11 21:37:54 by erigolon         ###   ########.fr       */
+/*   Updated: 2023/01/12 11:37:50 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putchar(char c)
+int	ft_putcharf(char c)
 {
 	write(1, &c, 1);
+	return (1);
 }
