@@ -6,7 +6,7 @@
 #    By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/04 10:19:03 by erigolon          #+#    #+#              #
-#    Updated: 2023/01/12 12:50:57 by erigolon         ###   ########.fr        #
+#    Updated: 2023/01/12 15:47:23 by erigolon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ LIB = ar rcs
 
 SRC = ft_printf.c \
 	ft_putcharf.c \
+	ft_putstrf.c \
 	ft_check_percentage.c \
 	./libft/ft_strlen.c \
 
