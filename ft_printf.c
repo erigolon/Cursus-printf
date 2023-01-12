@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 15:13:38 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/11 21:52:17 by erigolon         ###   ########.fr       */
+/*   Updated: 2023/01/12 10:53:44 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,4 @@ int	ft_printf(char const *ph, ...)
 		i++;
 	}
 	return (num_args);
-}
-
-int	main(void)
-{
-	printf("Hola");
-	ft_printf("Hola");
-	return (0);
 }
