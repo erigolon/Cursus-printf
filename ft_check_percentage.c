@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 12:38:57 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/12 16:31:08 by erigolon         ###   ########.fr       */
+/*   Updated: 2023/01/12 17:03:57 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int	ft_check_percentage(char convert, va_list args, int count)
 	{
 		str = ft_itoa(va_arg(args, int));
 		count += ft_putstrf(str);
+		free(str);
 	}
 	else if (convert == '%')
 		count += ft_putcharf('%');
