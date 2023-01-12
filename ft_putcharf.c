@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_putcharf.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/09 12:39:22 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/12 12:45:03 by erigolon         ###   ########.fr       */
+/*   Created: 2023/01/11 19:25:22 by erigolon          #+#    #+#             */
+/*   Updated: 2023/01/12 12:26:56 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include "./libft/libft.h"
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <stdarg.h>
-
-int		ft_printf(char const *str, ...);
-int		ft_putcharf(char c);
-int		ft_check_percentage(char convert, va_list args, int count);
-
-#endif
+int	ft_putcharf(char c)
+{
+	write(1, &c, 1);
+	return (1);
+}

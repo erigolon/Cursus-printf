@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 15:13:38 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/12 11:37:57 by erigolon         ###   ########.fr       */
+/*   Updated: 2023/01/12 12:42:05 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,13 @@ int	ft_printf(char const *ph, ...)
 	count = 0;
 	while (i < num_args)
 	{
-		count = ft_putcharf(ph[i]);
+		if (ph[i] == '%')
+		{
+			i++;
+			ft_check_percentage(ph[i], args, count);
+		}
+		else
+			count = count + ft_putcharf(ph[i]);
 		i++;
 	}
 	return (count);
