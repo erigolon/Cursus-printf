@@ -6,7 +6,7 @@
 #    By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/04 10:19:03 by erigolon          #+#    #+#              #
-#    Updated: 2023/01/12 16:28:00 by erigolon         ###   ########.fr        #
+#    Updated: 2023/01/16 15:02:44 by erigolon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ SRC = ft_printf.c \
 	ft_putcharf.c \
 	ft_putstrf.c \
 	ft_check_percentage.c \
+	ft_itoa_u.c \
 	./libft/ft_strlen.c \
 	./libft/ft_itoa.c \
 
