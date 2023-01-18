@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 15:13:38 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/12 16:37:56 by erigolon         ###   ########.fr       */
+/*   Updated: 2023/01/18 17:53:14 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_printf(char const *ph, ...)
 	int		i;
 	int		count;
 
+	if (write(1, "", 0) == -1)
+		return (-1);
 	num_args = ft_strlen(ph);
 	va_start(args, ph);
 	i = 0;
