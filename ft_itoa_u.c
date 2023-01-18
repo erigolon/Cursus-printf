@@ -6,17 +6,19 @@
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 14:56:50 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/16 17:07:00 by erigolon         ###   ########.fr       */
+/*   Updated: 2023/01/18 13:18:25 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	num_len_u(int n)
+int	num_len_u(unsigned long n)
 {
 	int	len;
 
 	len = 0;
+	if (n == 0)
+		len ++;
 	while (n)
 	{
 		n = n / 10;
@@ -25,11 +27,11 @@ int	num_len_u(int n)
 	return (len);
 }
 
-char	*ft_itoa_u(int n)
+char	*ft_itoa_u(unsigned int n)
 {
-	char		*str;
-	int			len;
-	long int	nb;
+	char			*str;
+	int				len;
+	unsigned long	nb;
 
 	nb = n;
 	len = num_len_u(nb);
