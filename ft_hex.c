@@ -6,7 +6,7 @@
 /*   By: erigolon <erigolon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 14:02:01 by erigolon          #+#    #+#             */
-/*   Updated: 2023/01/18 18:16:11 by erigolon         ###   ########.fr       */
+/*   Updated: 2023/01/19 09:43:28 by erigolon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_strinvcpy(char *dst, char *src)
 	dst[i] = '\0';
 }
 
-char	*cosita(char *str)
+char	*newstr(char *str)
 {
 	int		len;
 	char	*str_done;
@@ -66,7 +66,7 @@ char	*ft_hex(unsigned long decimal, int mayus)
 	}
 	hex[i] = '\0';
 	str = &hex[0];
-	str = cosita(str);
+	str = newstr(str);
 	return (str);
 }
 /*
